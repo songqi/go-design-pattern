@@ -25,7 +25,7 @@ func (d DellMouse) SayMouseBrand() {
 //惠普鼠标
 type HpMouse struct{}
 
-func (h HpMouse) SayMouseBrand() {
+func (h *HpMouse) SayMouseBrand() {
 	fmt.Println("Hp Mouse")
 }
 
@@ -61,7 +61,7 @@ type HpFactory struct {
 }
 
 func (h *HpFactory) CreateMouse() {
-	h.Mouse = HpMouse{}
+	h.Mouse = &HpMouse{}
 }
 
 func (h *HpFactory) CreateKeybo() {
@@ -75,7 +75,7 @@ type DellFactory struct {
 }
 
 func (d *DellFactory) CreateMouse() {
-	d.Mouse = HpMouse{}
+	d.Mouse = &HpMouse{}
 }
 
 func (d *DellFactory) CreateKeybo() {
