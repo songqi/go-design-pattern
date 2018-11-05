@@ -24,7 +24,7 @@ type Person struct {
 }
 
 func (p *Person) SetSex() {
-	p.sex = "unknow"
+	p.sex = "unKnow"
 }
 
 func (p *Person) Eat(s string) {
@@ -32,7 +32,7 @@ func (p *Person) Eat(s string) {
 }
 
 func (p *Person) Dress() {
-	fmt.Println("unknow")
+	fmt.Println("unKnow")
 }
 
 //男人
