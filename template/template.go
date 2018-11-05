@@ -42,7 +42,7 @@ type Man struct {
 }
 
 func (m Man) SetSex() {
-	m.p.sex = "男人"
+	m.p.sex = "男人."
 }
 
 //重写化妆
@@ -56,7 +56,7 @@ type Women struct {
 }
 
 func (w Women) SetSex() {
-	w.p.sex = "女人"
+	w.p.sex = "女人."
 }
 
 //重写化妆
